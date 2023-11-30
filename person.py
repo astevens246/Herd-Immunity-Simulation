@@ -9,11 +9,19 @@ class Person(object):
         # A person has an id, is_vaccinated and possibly an infection
         self._id = _id  # int
         # TODO Define the other attributes of a person here
-        pass
+        self.is_vaccinated = is_vaccinated  # boolean
+        self.infection = infection  # virus object
+        
 
     def did_survive_infection(self):
         # This method checks if a person survived an infection. 
         # TODO Only called if infection attribute is not None.
+        if self.infection:
+            survived = random.random() > self.infection.mortality_rate
+            if survived:
+                self.is_vaccinated = True # person is now vaccinated
+            return survived
+        return None # Return none if there's no infection
         # Check generate a random number between 0.0 - 1.0
         # If the number is less than the mortality rate of the 
         # person's infection they have passed away. 
@@ -34,6 +42,9 @@ if __name__ == "__main__":
     # Create an unvaccinated person and test their attributes
     unvaccinated_person = Person(2, False)
     # TODO Test unvaccinated_person's attributes here...
+    assert unvaccinated_person._id == 2
+    assert unvaccinated_person.is_vaccinated is False
+    assert unvaccinated_person.infection is None
 
     # Test an infected person. An infected person has an infection/virus
     # Create a Virus object to give a Person object an infection
@@ -43,6 +54,9 @@ if __name__ == "__main__":
     # TODO: complete your own assert statements that test
     # the values of each attribute
     # assert ...
+    assert infected_person._id == 3
+    assert infected_person.is_vaccinated is False
+    assert infected_person.infection == virus
 
     # You need to check the survival of an infected person. Since the chance
     # of survival is random you need to check a group of people. 
@@ -84,3 +98,5 @@ if __name__ == "__main__":
     # Now count the infected and uninfect people from this group of people. 
     # The number of infectedf people should be roughly the same as the 
     # infection rate of the virus.
+    
+    
