@@ -1,5 +1,8 @@
 Simulation Log
-Start of Simulation - Time Step: 1
-Initial Population Size: 1000
-Virus Information: Sniffles, Repro Rate: 0.5, Mortality Rate: 0.12
+Before Simulation Begins: Display Introduction
+Initial size of the population: 100000
+Initial number of infected people: 10
+Name of the virus: Ebola
+Stats for the virus: Repro Rate - 0.25, Mortality Rate - 0.7
+Date the simulation was run: 2023-12-04 22:38:54.700656
 

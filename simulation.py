@@ -1,3 +1,4 @@
+import sys
 import random
 import uuid
 from person import Person
@@ -38,13 +39,24 @@ class Simulation(object):
         time_step_counter = 0
         should_continue = True
 
+        self.logger.log_introduction(self.pop_size, self.initial_infected, self.virus)
+
         while should_continue:
             time_step_counter += 1
             should_continue = self._simulation_should_continue()
 
-            self.logger.log_starting_statistics(time_step_counter, self.pop_size, self.virus)
+            self.logger.log_iteration(time_step_counter, num_new_infections, num_deaths, current_stats)
             self.time_step()
-            self.logger.log_simulation_end(time_step_counter)
+
+        total_living = sum(person.is_alive for person in self.population)
+        total_dead = self.pop_size - total_living
+        interactions_stats = {
+            'total': total_interactions,
+            'vaccination': num_vaccination_interactions,
+            'death': num_death_interactions
+        }
+        self.logger.log_summary(total_living, total_dead, num_vaccinations, end_reason, interactions_stats)
+        self.logger.log_simulation_end(time_step_counter)
 
     def time_step(self):
         for person in self.population:
@@ -71,14 +83,23 @@ class Simulation(object):
         self.newly_infected = []
 
 if __name__ == "__main__":
-    virus_name = "Sniffles"
-    repro_num = 0.5
-    mortality_rate = 0.12
-    virus = Virus(virus_name, repro_num, mortality_rate)
+    # Parse command-line arguments
+    if len(sys.argv) != 7:
+        print("Usage: python3 simulation.py <population size> <vacc_percentage> <virus_name> <mortality_rate> <repro_rate> <initial_infected>")
+        sys.exit(1)
 
-    pop_size = 1000
-    vacc_percentage = 0.1
-    initial_infected = 10
+    pop_size = int(sys.argv[1])
+    vacc_percentage = float(sys.argv[2])
+    virus_name = sys.argv[3]
+    mortality_rate = float(sys.argv[4])
+    repro_rate = float(sys.argv[5])
+    initial_infected = int(sys.argv[6])
 
+    # Create Virus instance
+    virus = Virus(virus_name, repro_rate, mortality_rate)
+
+    # Create Simulation instance
     sim = Simulation(virus, pop_size, vacc_percentage, initial_infected)
+
+    # Run the simulation
     sim.run()
