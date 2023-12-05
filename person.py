@@ -25,14 +25,15 @@ class Person(object):
             if survived:
                 self.is_vaccinated = True # person is now vaccinated
             return survived
-        return None # Return none if there's no infection
+        else: 
+            return False # Return none if there's no infection
         # Check generate a random number between 0.0 - 1.0
         # If the number is less than the mortality rate of the 
         # person's infection they have passed away. 
         # Otherwise they have survived infection and they are now vaccinated. 
         # Set their properties to show this
         # TODO: The method Should return a Boolean showing if they survived.
-        pass
+        
 
 if __name__ == "__main__":
     # This section is incomplete finish it and use it to test your Person class
@@ -68,26 +69,37 @@ if __name__ == "__main__":
     people = []
     for i in range(1, 100):
         # TODO Make a person with an infection
+        # create a virus object to give a person an infection
+        virus = Virus("Dysentery", 0.7, 0.2)
+        # create a person object and give them the virus infection
+        person = Person(_id=i, is_vaccinated=False, infection=virus)
         # TODO Append the person to the people list
-        pass
+        people.append(person)
 
     # Now that you have a list of 100 people. Resolve whether the Person 
     # survives the infection or not by looping over the people list. 
-
-    # for person in people:
+    for person in people:
     #     # For each person call that person's did_survive_infection method
-    #     survived = person.did_survive_infection()
+        survived = person.did_survive_infection()
 
     # Count the people that survived and did not survive: 
    
-    # did_survived = 0
-    # did_not_survive = 0
+    did_survive = sum(person.is_alive for person in people)
+    did_not_survive = 100 - did_survive
 
-    # TODO Loop over all of the people 
+# TODO Loop over all of the people 
+for person in people:
+    survived = person.did_survive_infection()
     # TODO If a person is_alive True add one to did_survive
+    if person.is_alive:
+        did_survive += 1
     # TODO If a person is_alive False add one to did_not_survive
+    else:
+        did_not_survive += 1
 
-    # TODO When the loop is complete print your results.
+# When the loop is complete print your results.
+print(f"{did_survive} people survived and {did_not_survive} did not survive.")
+
     # The results should roughly match the mortality rate of the virus
     # For example if the mortality rate is 0.2 rough 20% of the people 
     # should succumb. 
