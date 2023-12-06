@@ -17,3 +17,14 @@ if __name__ == "__main__":
     assert virus.name == "HIV"
     assert virus.repro_rate == 0.8
     assert virus.mortality_rate == 0.3
+
+    # Add two more tests with different instances
+    virus2 = Virus("Influenza", 0.5, 0.1)
+    assert virus2.name == "Influenza"
+    assert virus2.repro_rate == 0.5
+    assert virus2.mortality_rate == 0.1
+
+    virus3 = Virus("COVID-19", 0.7, 0.2)
+    assert virus3.name == "COVID-19"
+    assert virus3.repro_rate == 0.7
+    assert virus3.mortality_rate == 0.2

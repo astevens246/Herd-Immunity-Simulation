@@ -136,3 +136,4 @@ if __name__ == "__main__":
     virus = Virus(name="ExampleVirus", repro_rate=0.2, mortality_rate=0.05)
     sim = Simulation(virus=virus, pop_size=1000, vacc_percentage=0.1, initial_infected=5)
     sim.run()
+    sim.logger.close_log_file()  # Close the log file after the simulation is done

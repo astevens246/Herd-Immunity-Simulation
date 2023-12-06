@@ -1,8 +1,14 @@
 import datetime
 
-class Logger(object):
+class Logger:
     def __init__(self, file_name):
         self.file_name = file_name
+        self.file = None  # Add this line to initialize the file attribute
+
+        self.log_file = open(self.file_name, 'w')
+        self.vaccination_interactions = 0
+        self.death_interactions = 0
+        
         with open(self.file_name, 'w') as log_file:
             log_file.write("Simulation Log\n")
 
@@ -28,16 +34,17 @@ class Logger(object):
             file.write(f"Total number of vaccinated people: {current_stats['total_vaccinated']}\n")
             file.write("\n")
 
-    def log_summary(self, total_living, total_dead, num_vaccinations, end_reason, interactions_stats):
-        with open(self.file_name, 'a') as file:
-            file.write("After Simulation Ends: Summary\n")
-            file.write(f"Total living: {total_living}\n")
-            file.write(f"Total dead: {total_dead}\n")
-            file.write(f"Number of vaccinations: {num_vaccinations}\n")
-            file.write(f"Why the simulation ended: {end_reason}\n")
-            file.write(f"Total number of interactions that happened in the simulation: {interactions_stats['total']}\n")
-            file.write(f"Number of interactions that resulted in vaccination: {interactions_stats['vaccination']}\n")
-            file.write(f"Number of interactions that resulted in death: {interactions_stats['death']}\n")
+    def log_summary(self, total_living, total_dead, end_reason, interactions_stats):
+        # Log a summary of the simulation
+        self.file.write("\n\nSimulation Summary\n")
+        self.file.write("-------------------\n")
+        self.file.write(f"Total living: {total_living}\n")
+        self.file.write(f"Total dead: {total_dead}\n")
+        self.file.write(f"End reason: {end_reason}\n")
+        self.file.write("\nInteractions Stats:\n")
+        self.file.write(f"Total interactions: {interactions_stats['total']}\n")
+        self.file.write(f"Vaccination interactions: {interactions_stats['vaccination']}\n")
+        self.file.write(f"Death interactions: {interactions_stats['death']}\n")
 
     def log_starting_statistics(self, time_step_counter, pop_size, virus):
         with open(self.file_name, 'a') as file:
@@ -69,3 +76,11 @@ class Logger(object):
     def get_total_interactions(self):
             # Return the total number of interactions
             return self.vaccination_interactions + self.death_interactions
+    def get_vaccination_interactions(self):
+        return self.vaccination_interactions
+
+    def get_death_interactions(self):
+        return self.death_interactions
+
+    def close_log_file(self):
+        self.log_file.close()
