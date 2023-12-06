@@ -3,9 +3,9 @@ from virus import Virus
 
 class Person(object):
     # Define a person.
-    def __init__(self, _id, is_vaccinated=False, infection=None):
+    def __init__(self, person_id, is_vaccinated=False, infection=None):
         # A person has an id, is_vaccinated, and possibly an infection
-        self._id = _id  # int
+        self._id = person_id  # int
         # TODO: Define the other attributes of a person here
         self.is_vaccinated = is_vaccinated  # boolean
         self.infection = infection  # virus object

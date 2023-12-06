@@ -46,9 +46,13 @@ class Logger(object):
             file.write(f"Virus Information: {virus.name}, Repro Rate: {virus.repro_rate}, Mortality Rate: {virus.mortality_rate}\n")
             file.write("\n")
 
-    def log_interactions(self, infected_person, random_person):
+
+    def log_interaction(self, person1, person2, interaction_type):
         with open(self.file_name, 'a') as file:
-            file.write(f"{infected_person._id}\t{random_person._id}\t1\n")  # Assuming 1 interaction
+            if person2 is not None:
+                file.write(f"{person1._id}\t{person2._id}\t1\n")  # Assuming 1 interaction
+            else:
+                file.write(f"{person1._id}\tNone\t{interaction_type}\n")  # Log the interaction type for the end of simulation
 
     def log_infection_survival(self, step_number, population_count, number_of_new_fatalities):
         with open(self.file_name, 'a') as file:
@@ -62,3 +66,6 @@ class Logger(object):
         with open(self.file_name, 'a') as file:
             file.write(f"End of Simulation - Time Step: {time_step_counter}\n")
             file.write("Simulation Ended\n")
+    def get_total_interactions(self):
+            # Return the total number of interactions
+            return self.vaccination_interactions + self.death_interactions
