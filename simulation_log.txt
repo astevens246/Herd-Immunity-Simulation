@@ -1,207 +1,53 @@
 Simulation Log
 Before Simulation Begins: Display Introduction
-Initial size of the population: 100
+Initial size of the population: 1000
 Initial number of infected people: 5
-Name of the virus: TestVirus
-Stats for the virus: Repro Rate - 0.5, Mortality Rate - 0.1
-Date the simulation was run: 2023-12-05 22:46:39.063720
+Name of the virus: ExampleVirus
+Stats for the virus: Repro Rate - 0.2, Mortality Rate - 0.05
+Date the simulation was run: 2023-12-06 14:13:21.379420
 
 While Simulation Runs: Display Every Iteration
 Step: 1
 The number of new infections: 0
-The number of deaths: 0
+The number of deaths: 1000
 Statistics for the current state of the population:
-Total number of living people: 100
+Total number of living people: 1000
 Total number of dead people: 0
-Total number of vaccinated people: 20
+Total number of vaccinated people: 0
 
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	fc078c94-e7ff-4cbf-856b-f00498779164	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	549fb59c-13f6-4f85-8e6b-e189830df18c	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	34d801ef-eb30-40c6-b1e1-d36252f9f4b3	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	58d45c3e-ce05-4111-b8a1-44190304f58c	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	16cdc9c9-e04c-426c-9542-06219381b9f5	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	0f461524-402e-4fa2-9e75-aaa6ae873cf3	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	1bb8ec5a-1f37-4462-8db6-6537c250fbc8	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	60a3d285-a1ad-4ecc-bd77-bd1901cde59b	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	b0d3ad94-a7ac-4c1e-9d3b-8b867dd3bfee	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	8794f17f-8a83-45b5-8a1d-4a5287441479	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	16684380-50e2-48da-85ec-372455ba96cc	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	01ba4d82-8b54-45b0-9624-7c1063314b1b	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	93d4a1ae-e21e-4bf7-a799-bd79b284bfb5	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	c9ecdea1-20ae-44e1-b293-7b9873cf1219	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	ba833339-be7a-4bf1-9420-a9ea3f6131a1	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	e02f6aa1-7ce2-4889-a522-187d069c0dc0	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	08af3400-2c1a-4141-9e26-d0932715336d	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	2fa70bad-f943-4fa6-b228-d4e03cc3d6a6	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	331a280b-c571-4673-a581-3d37a1134c09	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	ff06772f-4eb1-4c67-afbb-c60e760d4ecd	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	7ed559d8-f0ae-4ab8-8d0f-238a3f178cd2	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	abf3ec78-f54c-47e8-a2b9-83375a504081	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	c5f12c48-3f60-4586-83d6-ea1af1852a59	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	eb683570-44d2-4a3d-b45a-19bcf7f4dce4	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	35968621-ae4a-456a-a89a-44045781f9c8	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	e4456f85-e6fe-476b-9a83-ed6f24f3d4b3	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	6a779323-34f9-4835-b880-715c94d71aed	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	2b5e24f8-d843-4a61-9bb1-70abe67b80c2	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	4aaeb3ea-dea7-413a-ae27-72b5365436aa	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	901607c3-4539-45b1-a7db-02581abff7a0	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	987dc1d3-21d6-4be7-9dc1-07e309acce6b	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	b080231a-376d-4910-a5a9-2e3368cd2925	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	9ca4645d-63c7-442e-ba88-ea851ef92b59	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	9fe79245-2cb3-4e39-988d-f69b13a672b4	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	14a0747f-d02f-47b9-9d88-d68d2428dd0f	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	2d3dc37c-4bef-47d4-b2d9-4499ea276c9b	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	ca09c5bb-ff7d-476c-843e-6ebd6e2ece2b	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	9cb278b0-4a84-4d69-b06e-b91c51376d8c	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	0cd5ceb4-a4eb-4f52-b498-cbec1d657295	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	d693c717-4b84-4a4d-b105-5c30803e3723	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	dc27793c-0b30-478c-974b-f7e0bbbf4a5a	1
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	680e6b89-ab62-41e2-b6a7-cebad247859f	1
-518b0ff1-8424-4862-b603-0abe82dfb526	f54318c3-f1c4-4ee1-b903-3ee70db05eb7	1
-518b0ff1-8424-4862-b603-0abe82dfb526	d63574c8-d662-4174-8a76-8d9d4ed77510	1
-518b0ff1-8424-4862-b603-0abe82dfb526	17b8bd8e-b5c1-4454-bd68-89efde81ca45	1
-518b0ff1-8424-4862-b603-0abe82dfb526	72da7d8b-cd38-4d2c-ab0f-19568a7ed08f	1
-518b0ff1-8424-4862-b603-0abe82dfb526	53263616-3052-4157-aa73-3ebe8f996700	1
-518b0ff1-8424-4862-b603-0abe82dfb526	7a436be1-46c4-402e-b56b-0b80789f1b07	1
-518b0ff1-8424-4862-b603-0abe82dfb526	4113610f-846d-4760-9e8d-2d26b4f0c9cf	1
-518b0ff1-8424-4862-b603-0abe82dfb526	55f9f8f1-6598-4cc8-baac-2033f4c4f12b	1
-518b0ff1-8424-4862-b603-0abe82dfb526	4179c880-f8d3-4717-9df2-f35f8f921822	1
-518b0ff1-8424-4862-b603-0abe82dfb526	ea07c4ec-ba85-44cf-b1a2-6c5e3ea58a29	1
-c39ca84b-c80d-429a-ace6-68b6ec3e64ec	c4c8f791-dff8-4149-9e7b-5894824a848b	1
-c39ca84b-c80d-429a-ace6-68b6ec3e64ec	67b1a22a-ab60-4ba9-9729-c1816f13587c	1
-c39ca84b-c80d-429a-ace6-68b6ec3e64ec	793a22f2-d2fd-44e5-a33a-8465906fecfa	1
-c39ca84b-c80d-429a-ace6-68b6ec3e64ec	f08e33e5-8c9f-4d7f-bfb0-b0f931698f8d	1
-c39ca84b-c80d-429a-ace6-68b6ec3e64ec	af554fee-9640-4271-85b5-ba66b1cf9ba9	1
-c39ca84b-c80d-429a-ace6-68b6ec3e64ec	860b69b6-5266-4994-9402-1d411b180148	1
-9f35d0c1-4d9c-478b-9001-268feadf4776	1fdbd628-eab4-4b74-8c22-43d6d4b0ad56	1
-9f35d0c1-4d9c-478b-9001-268feadf4776	170020c6-c8fd-45ec-9d16-019b7baf2f1e	1
-9f35d0c1-4d9c-478b-9001-268feadf4776	66660e6b-954a-4028-af9e-9d7fc7fa9ec6	1
-9f35d0c1-4d9c-478b-9001-268feadf4776	305486c3-d2f1-4a3d-933a-50f719fe149c	1
-9f35d0c1-4d9c-478b-9001-268feadf4776	a8c64e66-a2f8-4411-aeef-0fb3d8bb1cbd	1
-6b9f984d-b190-46dc-bd2c-6f9c1440f4be	None	survival
-77578a71-bfec-4d1b-abb5-8b4dfc728ccc	None	survival
-518b0ff1-8424-4862-b603-0abe82dfb526	None	survival
-c39ca84b-c80d-429a-ace6-68b6ec3e64ec	None	survival
-9f35d0c1-4d9c-478b-9001-268feadf4776	None	death
 While Simulation Runs: Display Every Iteration
 Step: 2
 The number of new infections: 0
-The number of deaths: 1
+The number of deaths: 999
 Statistics for the current state of the population:
-Total number of living people: 99
+Total number of living people: 999
 Total number of dead people: 1
-Total number of vaccinated people: 24
+Total number of vaccinated people: 4
 
-9ca4645d-63c7-442e-ba88-ea851ef92b59	b3d2c196-0753-4360-a75f-79450b21af16	1
-9ca4645d-63c7-442e-ba88-ea851ef92b59	370c2a58-92a7-4557-8745-a4f5ec71a77c	1
-9ca4645d-63c7-442e-ba88-ea851ef92b59	b49308fe-7e55-4128-bb94-062207af22e1	1
-9ca4645d-63c7-442e-ba88-ea851ef92b59	1fabb27f-636a-4fc3-bd98-7a12da042d7b	1
-9ca4645d-63c7-442e-ba88-ea851ef92b59	7750f223-b88e-44b1-aebc-82ea3a476c4f	1
-170020c6-c8fd-45ec-9d16-019b7baf2f1e	97f6110c-7b90-4df2-8902-9b35ffc61e43	1
-170020c6-c8fd-45ec-9d16-019b7baf2f1e	9f35d0c1-4d9c-478b-9001-268feadf4776	1
-60a3d285-a1ad-4ecc-bd77-bd1901cde59b	97d9c44e-76ad-4089-a8fa-82916b2e0faf	1
-60a3d285-a1ad-4ecc-bd77-bd1901cde59b	86c73b60-5352-4950-8f11-da07032107e9	1
-60a3d285-a1ad-4ecc-bd77-bd1901cde59b	cf14f289-9dcc-4bd0-b0b3-eacc323c5244	1
-60a3d285-a1ad-4ecc-bd77-bd1901cde59b	c526b351-86f3-4679-b940-ff8fde0856a6	1
-66660e6b-954a-4028-af9e-9d7fc7fa9ec6	ba67b38f-ea85-4300-9dd2-a2ec1f36a203	1
-8794f17f-8a83-45b5-8a1d-4a5287441479	61eb3727-f986-4d4a-a320-568b652be573	1
-9ca4645d-63c7-442e-ba88-ea851ef92b59	None	survival
-170020c6-c8fd-45ec-9d16-019b7baf2f1e	None	survival
-60a3d285-a1ad-4ecc-bd77-bd1901cde59b	None	survival
-66660e6b-954a-4028-af9e-9d7fc7fa9ec6	None	survival
-ca09c5bb-ff7d-476c-843e-6ebd6e2ece2b	None	survival
-34d801ef-eb30-40c6-b1e1-d36252f9f4b3	None	survival
-8794f17f-8a83-45b5-8a1d-4a5287441479	None	survival
-793a22f2-d2fd-44e5-a33a-8465906fecfa	None	death
-1bb8ec5a-1f37-4462-8db6-6537c250fbc8	None	death
-af554fee-9640-4271-85b5-ba66b1cf9ba9	None	survival
-6a779323-34f9-4835-b880-715c94d71aed	None	survival
-2d3dc37c-4bef-47d4-b2d9-4499ea276c9b	None	survival
-987dc1d3-21d6-4be7-9dc1-07e309acce6b	None	survival
-7ed559d8-f0ae-4ab8-8d0f-238a3f178cd2	None	survival
-dc27793c-0b30-478c-974b-f7e0bbbf4a5a	None	survival
-14a0747f-d02f-47b9-9d88-d68d2428dd0f	None	survival
-eb683570-44d2-4a3d-b45a-19bcf7f4dce4	None	survival
-f54318c3-f1c4-4ee1-b903-3ee70db05eb7	None	survival
-c4c8f791-dff8-4149-9e7b-5894824a848b	None	survival
-0cd5ceb4-a4eb-4f52-b498-cbec1d657295	None	survival
-2fa70bad-f943-4fa6-b228-d4e03cc3d6a6	None	survival
-b0d3ad94-a7ac-4c1e-9d3b-8b867dd3bfee	None	survival
-53263616-3052-4157-aa73-3ebe8f996700	None	survival
-331a280b-c571-4673-a581-3d37a1134c09	None	survival
-ea07c4ec-ba85-44cf-b1a2-6c5e3ea58a29	None	survival
-c5f12c48-3f60-4586-83d6-ea1af1852a59	None	death
-9cb278b0-4a84-4d69-b06e-b91c51376d8c	None	survival
-d63574c8-d662-4174-8a76-8d9d4ed77510	None	survival
-4113610f-846d-4760-9e8d-2d26b4f0c9cf	None	survival
-93d4a1ae-e21e-4bf7-a799-bd79b284bfb5	None	survival
-35968621-ae4a-456a-a89a-44045781f9c8	None	survival
-abf3ec78-f54c-47e8-a2b9-83375a504081	None	survival
-680e6b89-ab62-41e2-b6a7-cebad247859f	None	death
-16cdc9c9-e04c-426c-9542-06219381b9f5	None	survival
-4aaeb3ea-dea7-413a-ae27-72b5365436aa	None	survival
-a8c64e66-a2f8-4411-aeef-0fb3d8bb1cbd	None	survival
-9fe79245-2cb3-4e39-988d-f69b13a672b4	None	survival
-b080231a-376d-4910-a5a9-2e3368cd2925	None	survival
-08af3400-2c1a-4141-9e26-d0932715336d	None	survival
-ba833339-be7a-4bf1-9420-a9ea3f6131a1	None	survival
-58d45c3e-ce05-4111-b8a1-44190304f58c	None	survival
-7a436be1-46c4-402e-b56b-0b80789f1b07	None	survival
-0f461524-402e-4fa2-9e75-aaa6ae873cf3	None	survival
-fc078c94-e7ff-4cbf-856b-f00498779164	None	survival
-01ba4d82-8b54-45b0-9624-7c1063314b1b	None	survival
-c9ecdea1-20ae-44e1-b293-7b9873cf1219	None	survival
-860b69b6-5266-4994-9402-1d411b180148	None	survival
-55f9f8f1-6598-4cc8-baac-2033f4c4f12b	None	survival
-17b8bd8e-b5c1-4454-bd68-89efde81ca45	None	death
-901607c3-4539-45b1-a7db-02581abff7a0	None	survival
-ff06772f-4eb1-4c67-afbb-c60e760d4ecd	None	death
-1fdbd628-eab4-4b74-8c22-43d6d4b0ad56	None	survival
-16684380-50e2-48da-85ec-372455ba96cc	None	survival
-4179c880-f8d3-4717-9df2-f35f8f921822	None	survival
-549fb59c-13f6-4f85-8e6b-e189830df18c	None	survival
-72da7d8b-cd38-4d2c-ab0f-19568a7ed08f	None	survival
-305486c3-d2f1-4a3d-933a-50f719fe149c	None	survival
-67b1a22a-ab60-4ba9-9729-c1816f13587c	None	survival
-2b5e24f8-d843-4a61-9bb1-70abe67b80c2	None	survival
-e4456f85-e6fe-476b-9a83-ed6f24f3d4b3	None	survival
-f08e33e5-8c9f-4d7f-bfb0-b0f931698f8d	None	survival
-d693c717-4b84-4a4d-b105-5c30803e3723	None	survival
-e02f6aa1-7ce2-4889-a522-187d069c0dc0	None	survival
 While Simulation Runs: Display Every Iteration
 Step: 3
 The number of new infections: 0
-The number of deaths: 7
+The number of deaths: 996
 Statistics for the current state of the population:
-Total number of living people: 93
-Total number of dead people: 7
-Total number of vaccinated people: 81
+Total number of living people: 996
+Total number of dead people: 4
+Total number of vaccinated people: 103
 
-7750f223-b88e-44b1-aebc-82ea3a476c4f	c5f12c48-3f60-4586-83d6-ea1af1852a59	1
-7750f223-b88e-44b1-aebc-82ea3a476c4f	17b8bd8e-b5c1-4454-bd68-89efde81ca45	1
-7750f223-b88e-44b1-aebc-82ea3a476c4f	793a22f2-d2fd-44e5-a33a-8465906fecfa	1
-1fabb27f-636a-4fc3-bd98-7a12da042d7b	9f35d0c1-4d9c-478b-9001-268feadf4776	1
-1fabb27f-636a-4fc3-bd98-7a12da042d7b	ff06772f-4eb1-4c67-afbb-c60e760d4ecd	1
-1fabb27f-636a-4fc3-bd98-7a12da042d7b	1bb8ec5a-1f37-4462-8db6-6537c250fbc8	1
-ba67b38f-ea85-4300-9dd2-a2ec1f36a203	680e6b89-ab62-41e2-b6a7-cebad247859f	1
-7750f223-b88e-44b1-aebc-82ea3a476c4f	None	survival
-1fabb27f-636a-4fc3-bd98-7a12da042d7b	None	survival
-370c2a58-92a7-4557-8745-a4f5ec71a77c	None	survival
-ba67b38f-ea85-4300-9dd2-a2ec1f36a203	None	survival
-97d9c44e-76ad-4089-a8fa-82916b2e0faf	None	survival
-b49308fe-7e55-4128-bb94-062207af22e1	None	survival
-b3d2c196-0753-4360-a75f-79450b21af16	None	death
-97f6110c-7b90-4df2-8902-9b35ffc61e43	None	death
-61eb3727-f986-4d4a-a320-568b652be573	None	survival
-cf14f289-9dcc-4bd0-b0b3-eacc323c5244	None	survival
-86c73b60-5352-4950-8f11-da07032107e9	None	survival
-c526b351-86f3-4679-b940-ff8fde0856a6	None	survival
 While Simulation Runs: Display Every Iteration
 Step: 4
 The number of new infections: 0
-The number of deaths: 9
+The number of deaths: 956
 Statistics for the current state of the population:
-Total number of living people: 91
-Total number of dead people: 9
-Total number of vaccinated people: 91
+Total number of living people: 956
+Total number of dead people: 44
+Total number of vaccinated people: 835
+
+While Simulation Runs: Display Every Iteration
+Step: 5
+The number of new infections: 0
+The number of deaths: 947
+Statistics for the current state of the population:
+Total number of living people: 947
+Total number of dead people: 53
+Total number of vaccinated people: 947
 

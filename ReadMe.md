@@ -99,7 +99,7 @@ Let's look at an example:
   Then I would type:
 
   ```python
-  python3 simulation.py 100000 0.90 Ebola 0.70 0.25 10
+  python3 simulation.py 1000 0.95 Ebola 0.50 0.25 10
   ```
 
   in the terminal.

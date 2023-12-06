@@ -3,8 +3,6 @@ import datetime
 class Logger:
     def __init__(self, file_name):
         self.file_name = file_name
-        self.file = None  # Add this line to initialize the file attribute
-
         self.log_file = open(self.file_name, 'w')
         self.vaccination_interactions = 0
         self.death_interactions = 0
@@ -56,10 +54,10 @@ class Logger:
 
     def log_interaction(self, person1, person2, interaction_type):
         with open(self.file_name, 'a') as file:
-            if person2 is not None:
-                file.write(f"{person1._id}\t{person2._id}\t1\n")  # Assuming 1 interaction
-            else:
-                file.write(f"{person1._id}\tNone\t{interaction_type}\n")  # Log the interaction type for the end of simulation
+            person1_info = person1._id if hasattr(person1, '_id') else str(person1)
+            person2_info = person2._id if person2 is not None and hasattr(person2, '_id') else str(person2)
+
+
 
     def log_infection_survival(self, step_number, population_count, number_of_new_fatalities):
         with open(self.file_name, 'a') as file:

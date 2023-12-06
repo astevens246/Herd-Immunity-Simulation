@@ -3,13 +3,10 @@ from virus import Virus
 
 class Person(object):
     # Define a person.
-    def __init__(self, person_id, is_vaccinated=False, infection=None):
-        # A person has an id, is_vaccinated, and possibly an infection
-        self._id = person_id  # int
-        # TODO: Define the other attributes of a person here
-        self.is_vaccinated = is_vaccinated  # boolean
-        self.infection = infection  # virus object
-        self.is_alive = True
+    def __init__(self, is_vaccinated=False, infection=None, is_alive=True):
+        self.is_vaccinated = is_vaccinated
+        self.infection = infection
+        self.is_alive = is_alive
 
     def die(self):
         self.is_alive = False
@@ -29,6 +26,8 @@ class Person(object):
         if survived:
             self.is_vaccinated = True  # person is now vaccinated
         return survived
+    
+    
 if __name__ == "__main__":
     # This section is incomplete, finish it, and use it to test your Person class
     # TODO: Define a vaccinated person and check their attributes
