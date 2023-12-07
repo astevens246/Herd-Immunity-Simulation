@@ -133,9 +133,24 @@ class Simulation:
         for person in self.newly_infected:
             person.infection = self.virus
         self.newly_infected = []
-
 if __name__ == "__main__":
     virus = Virus(name="ExampleVirus", repro_rate=0.2, mortality_rate=0.05)
     sim = Simulation(virus=virus, pop_size=1000, vacc_percentage=0.1, initial_infected=5)
     sim.run()
+
+    # Calculate the percentage of population infected
+    total_living = sum(person.is_alive for person in sim.population)
+    percentage_infected = 100 * (1 - total_living / sim.pop_size)
+
+    # Calculate the percentage of population dead
+    percentage_dead = 100 * (1 - total_living / sim.pop_size)
+
+    # Get the number of vaccination saves from the logger after the simulation is done
+    vaccination_saves = sim.logger.get_vaccination_interactions()
+
+    # Print or log the final results
+    print(f"Percentage of population infected: {percentage_infected:.2f}%")
+    print(f"Percentage of population died: {percentage_dead:.2f}%")
+    print(f"Number of vaccination saves: {vaccination_saves}")
+
     sim.logger.close_log_file()  # Close the log file after the simulation is done

@@ -57,6 +57,8 @@ class Logger:
         with open(self.file_name, 'a') as file:
             person1_info = person1._id if hasattr(person1, '_id') else str(person1)
             person2_info = person2._id if person2 is not None and hasattr(person2, '_id') else str(person2)
+        if interaction_type == "vaccination":
+            self.vaccination_interactions += 1
 
 
 

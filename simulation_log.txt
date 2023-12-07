@@ -2,8 +2,8 @@
 
 Simulation Summary
 -------------------
-Total living: 959
-Total dead: 41
+Total living: 950
+Total dead: 50
 End reason: Simulation completed
 
 Interactions Stats:
@@ -11,7 +11,7 @@ Total interactions: 0
 Vaccination interactions: 0
 Death interactions: 0
 - 0.2, Mortality Rate - 0.05
-Date the simulation was run: 2023-12-07 15:04:53.049463
+Date the simulation was run: 2023-12-07 15:16:16.257526
 
 While Simulation Runs: Display Every Iteration
 Step: 1
@@ -34,29 +34,29 @@ Total number of vaccinated people: 5
 While Simulation Runs: Display Every Iteration
 Step: 3
 The number of new infections: 0
-The number of deaths: 992
+The number of deaths: 996
 Statistics for the current state of the population:
-Total number of living people: 992
-Total number of dead people: 8
-Total number of vaccinated people: 91
+Total number of living people: 996
+Total number of dead people: 4
+Total number of vaccinated people: 92
 
 While Simulation Runs: Display Every Iteration
 Step: 4
 The number of new infections: 0
-The number of deaths: 968
+The number of deaths: 956
 Statistics for the current state of the population:
-Total number of living people: 968
-Total number of dead people: 32
-Total number of vaccinated people: 848
+Total number of living people: 956
+Total number of dead people: 44
+Total number of vaccinated people: 805
 
 While Simulation Runs: Display Every Iteration
 Step: 5
 The number of new infections: 0
-The number of deaths: 959
+The number of deaths: 950
 Statistics for the current state of the population:
-Total number of living people: 959
-Total number of dead people: 41
-Total number of vaccinated people: 959
+Total number of living people: 950
+Total number of dead people: 50
+Total number of vaccinated people: 950
 
 End of Simulation - Time Step: 5
 Simulation Ended
