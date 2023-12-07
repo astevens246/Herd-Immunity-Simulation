@@ -34,15 +34,16 @@ class Logger:
 
     def log_summary(self, total_living, total_dead, end_reason, interactions_stats):
         # Log a summary of the simulation
-        self.file.write("\n\nSimulation Summary\n")
-        self.file.write("-------------------\n")
-        self.file.write(f"Total living: {total_living}\n")
-        self.file.write(f"Total dead: {total_dead}\n")
-        self.file.write(f"End reason: {end_reason}\n")
-        self.file.write("\nInteractions Stats:\n")
-        self.file.write(f"Total interactions: {interactions_stats['total']}\n")
-        self.file.write(f"Vaccination interactions: {interactions_stats['vaccination']}\n")
-        self.file.write(f"Death interactions: {interactions_stats['death']}\n")
+        self.log_file.write("\n\nSimulation Summary\n")
+        self.log_file.write("-------------------\n")
+        self.log_file.write(f"Total living: {total_living}\n")
+        self.log_file.write(f"Total dead: {total_dead}\n")
+        self.log_file.write(f"End reason: {end_reason}\n")
+        self.log_file.write("\nInteractions Stats:\n")
+        self.log_file.write(f"Total interactions: {interactions_stats['total']}\n")
+        self.log_file.write(f"Vaccination interactions: {interactions_stats['vaccination']}\n")
+        self.log_file.write(f"Death interactions: {interactions_stats['death']}\n")
+
 
     def log_starting_statistics(self, time_step_counter, pop_size, virus):
         with open(self.file_name, 'a') as file:

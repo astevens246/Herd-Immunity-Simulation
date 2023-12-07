@@ -1,10 +1,17 @@
-Simulation Log
-Before Simulation Begins: Display Introduction
-Initial size of the population: 1000
-Initial number of infected people: 5
-Name of the virus: ExampleVirus
-Stats for the virus: Repro Rate - 0.2, Mortality Rate - 0.05
-Date the simulation was run: 2023-12-06 14:13:21.379420
+
+
+Simulation Summary
+-------------------
+Total living: 959
+Total dead: 41
+End reason: Simulation completed
+
+Interactions Stats:
+Total interactions: 0
+Vaccination interactions: 0
+Death interactions: 0
+- 0.2, Mortality Rate - 0.05
+Date the simulation was run: 2023-12-07 15:04:53.049463
 
 While Simulation Runs: Display Every Iteration
 Step: 1
@@ -18,36 +25,38 @@ Total number of vaccinated people: 0
 While Simulation Runs: Display Every Iteration
 Step: 2
 The number of new infections: 0
-The number of deaths: 999
+The number of deaths: 1000
 Statistics for the current state of the population:
-Total number of living people: 999
-Total number of dead people: 1
-Total number of vaccinated people: 4
+Total number of living people: 1000
+Total number of dead people: 0
+Total number of vaccinated people: 5
 
 While Simulation Runs: Display Every Iteration
 Step: 3
 The number of new infections: 0
-The number of deaths: 996
+The number of deaths: 992
 Statistics for the current state of the population:
-Total number of living people: 996
-Total number of dead people: 4
-Total number of vaccinated people: 103
+Total number of living people: 992
+Total number of dead people: 8
+Total number of vaccinated people: 91
 
 While Simulation Runs: Display Every Iteration
 Step: 4
 The number of new infections: 0
-The number of deaths: 956
+The number of deaths: 968
 Statistics for the current state of the population:
-Total number of living people: 956
-Total number of dead people: 44
-Total number of vaccinated people: 835
+Total number of living people: 968
+Total number of dead people: 32
+Total number of vaccinated people: 848
 
 While Simulation Runs: Display Every Iteration
 Step: 5
 The number of new infections: 0
-The number of deaths: 947
+The number of deaths: 959
 Statistics for the current state of the population:
-Total number of living people: 947
-Total number of dead people: 53
-Total number of vaccinated people: 947
+Total number of living people: 959
+Total number of dead people: 41
+Total number of vaccinated people: 959
 
+End of Simulation - Time Step: 5
+Simulation Ended
